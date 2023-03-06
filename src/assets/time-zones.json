@@ -1,0 +1,18 @@
+{
+    "jerusalem":{
+        "zone": 0,
+        "name": "ירושלים"
+    },
+    "london":{
+        "zone": -2,
+        "name": "לונדון"
+    },
+    "paris":{
+        "zone": -1,
+        "name": "פריז"
+    },
+    "newYork":{
+        "zone": -7,
+        "name": "ניו יורק"
+    }
+}
