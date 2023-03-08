@@ -1,5 +1,10 @@
 <div class="row">
-    <div class="col" *ngFor="let timeZone of timeZones;">
+    <div class="col select">
+        <app-multi-select [selectFrom]="timeZones" (onSelected)="selectTimeZone($event)"></app-multi-select>
+    </div>
+</div>
+<div class="row">
+    <div class="col" *ngFor="let timeZone of selectedTimeZone;">
         <app-clock class="clock" [timeZone]="timeZone" [timeObservable]="observableTime"></app-clock>
     </div>
 </div>

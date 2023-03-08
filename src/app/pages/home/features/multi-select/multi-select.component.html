@@ -1,0 +1,6 @@
+<mat-form-field appearance="fill">
+    <mat-label>ערים להצגה</mat-label>
+    <mat-select multiple [(value)]="selected" (selectionChange)="select()">
+        <mat-option *ngFor="let option of selectFrom" [value]="option">{{option.name}}</mat-option>
+    </mat-select>
+</mat-form-field>
